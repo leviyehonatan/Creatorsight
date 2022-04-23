@@ -46,21 +46,21 @@ const CreatorSight = () => {
     }
   };
 
-  const Web3 = require("web3");
+  // const Web3 = require("web3");
 
-  async function run() {
-    const web3 = new Web3("https://mainnet.infura.io/v3/" + INFURA_PROJECT_ID);
-    const contract = new web3.eth.Contract(
-      YOUR_CONTRACT_ABI,
-      YOUR_CONTRACT_ADDRESS
-    );
-    const retVal = await contract.methods
-      .somePureOrViewFunction(arg1, arg2)
-      .call();
-    const varVal = await contract.methods.somePublicVariable().call();
-  }
+  // async function run() {
+  //   const web3 = new Web3("https://mainnet.infura.io/v3/" + INFURA_PROJECT_ID);
+  //   const contract = new web3.eth.Contract(
+  //     YOUR_CONTRACT_ABI,
+  //     YOUR_CONTRACT_ADDRESS
+  //   );
+  //   const retVal = await contract.methods
+  //     .somePureOrViewFunction(arg1, arg2)
+  //     .call();
+  //   const varVal = await contract.methods.somePublicVariable().call();
+  // }
 
-  run();
+  // run();
 
   const getContractData = async () => {
     const _address = document.getElementById("address").value;
